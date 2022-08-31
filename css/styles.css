@@ -165,7 +165,6 @@ footer {
   align-items: center;
   flex-direction: column;
   background-image: url(../images/team.jpg);
-  background-image: linear-gradient(to bottom, black);
   background-size: cover;
   background-repeat: no-repeat;
 }
