@@ -355,3 +355,18 @@ button:active {
 .section-description p {
   text-align: left;
 }
+.icons-antenna {
+  width: 270px;
+  height: 120px;
+  left: 215px;
+  top: 774px;
+  fill: #212121;
+  fill: #2196f3;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.container-svg-one {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
