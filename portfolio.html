@@ -40,8 +40,20 @@
           </ul>
         </nav>
         <div class="header-links">
-          <a class="link" href="/info@devstudio.com">info@devstudio.com</a>
-          <a class="link" href="/+48111111111">+48 111 111 111</a>
+          <a class="link" href="/info@devstudio.com">
+            <svg class="header-icon-phone">
+              <use xlink:href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </div>
+        <div class="header-links">
+          <a class="link" href="/+48111111111">
+            <svg class="header-icon-phone">
+              <use xlink:href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +48 111 111 111
+          </a>
         </div>
       </div>
     </header>
@@ -199,15 +211,42 @@
     </main>
 
     <footer class="section">
-      <div class="container-footer">
-        <a class="logo" href="index.html"
-          >Web<span class="footer-studio">Studio</span></a
-        >
-        <address>
-          <p class="footer-text">m. Warszawa, Aleje Jerozolimskie 21</p>
-          <a class="footer-link" href="/info@example.com">info@example.com</a>
-          <a class="footer-link" href="/+48111111111">+48 111 111 111</a>
-        </address>
+      <div class="all-footer-container">
+        <div class="fcontainer">
+          <a class="footer-logo" href="index.html"
+            >Web<span class="footer-studio">Studio</span></a
+          >
+          <address>
+            <p class="footer-text">m. Warszawa, Aleje Jerozolimskie 21</p>
+            <a class="footer-link" href="/info@example.com">info@example.com</a>
+            <a class="footer-link" href="/+48111111111">+48 111 111 111</a>
+          </address>
+        </div>
+        <div class="footer-social">
+          <p>Dołącz do nas</p>
+          <div class="footer-social-list">
+            <div class="footer-svg">
+              <svg class="svg-john" width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram-two"></use>
+              </svg>
+            </div>
+            <div class="footer-svg">
+              <svg class="svg-john" width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter-two"></use>
+              </svg>
+            </div>
+            <div class="footer-svg">
+              <svg class="svg-john" width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook-two"></use>
+              </svg>
+            </div>
+            <div class="footer-svg">
+              <svg class="svg-john" width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin-two"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
