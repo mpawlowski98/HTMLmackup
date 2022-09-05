@@ -34,6 +34,10 @@ a {
 .link:focus {
   color: var(--lowblue);
 }
+.link:hover svg,
+.link:hover svg {
+  fill: var(--lowblue);
+}
 .header-pages {
   display: flex;
   gap: 16px;
