@@ -52,10 +52,19 @@ a {
 .header-icon-phone {
   width: 10px;
   height: 16px;
-  padding-top: 6px;
+  padding-top: 5px;
 }
 .header-icon-phone:hover,
 .header-icon-phone:after {
+  fill: var(--lowblue);
+}
+.header-icon-mail {
+  width: 16px;
+  height: 12px;
+  padding-top: 3px;
+}
+.header-icon-mail:hover,
+.header-icon-mail:after {
   fill: var(--lowblue);
 }
 .link-active {
