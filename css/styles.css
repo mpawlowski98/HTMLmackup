@@ -37,6 +37,10 @@ img {
 .link:focus {
   color: var(--lowblue);
 }
+.link:hover svg,
+.link:hover svg {
+  fill: var(--lowblue);
+}
 .header-pages {
   display: flex;
   gap: 16px;
@@ -55,10 +59,19 @@ img {
 .header-icon-phone {
   width: 10px;
   height: 16px;
-  padding-top: 6px;
+  padding-top: 4px;
 }
 .header-icon-phone:hover,
 .header-icon-phone:after {
+  fill: var(--lowblue);
+}
+.header-icon-mail {
+  width: 16px;
+  height: 12px;
+  padding-top: 2px;
+}
+.header-icon-mail:hover,
+.header-icon-mail:after {
   fill: var(--lowblue);
 }
 .link-active {
@@ -422,8 +435,8 @@ button:focus {
   align-items: center;
   justify-content: center;
 }
-.icon-team:hover,
-.icon-team:focus {
+.icon-team:hover svg,
+.icon-team:focus svg {
   fill: var(--white);
 }
 .icon-team:hover,
@@ -431,7 +444,7 @@ button:focus {
   background-color: #2196f3;
   border-radius: 50%;
   cursor: pointer;
-  fill: var(--white);
+  color: var(--white);
 }
 
 .icon-team-social-div {
@@ -445,9 +458,6 @@ button:focus {
 .icons-john {
   fill: var(--nextgray);
 }
-.icons-john:hover {
-  fill: var(--white);
-}
 .svg-client {
   display: flex;
   justify-content: center;
@@ -459,23 +469,21 @@ button:focus {
   border-radius: 4px;
   align-items: center;
 }
+.svg-client:hover svg,
+.svg-client:hover svg {
+  fill:var(--lowblue);
+}
 .svg-client:hover,
 .svg-client:after {
-  fill: var(--lowblue);
   cursor: pointer;
   border: 1px solid #2196f3;
-  color: var(--lowblue);
+
 }
 .svg-client-option {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
 }
-.svg-client-option:hover,
-.svg-client-option:after {
-  fill: var(--lowblue);
-}
-
 .my-client {
   display: flex;
   justify-content: center;
