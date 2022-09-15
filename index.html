@@ -389,6 +389,59 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form>
+          <p class="header-form">Zostaw swoje dane w formularzu ponieżej</p>
+          
+          <label class="label-form" for="name">
+            <p class="text-modal">Imie</p>
+            <svg class="modal-svg" width="12" height="12">
+              <use href="./images/icons.svg#icon-user"></use>
+            </svg>
+            <input 
+             required
+             type="text" 
+             name="name"
+             id="name"
+             class="modal-input" />
+          </label>
+          <label class="label-form" for="number">
+            <p class="text-modal">Telefon</p>
+            <svg class="modal-svg" width="13" height="13">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            <input 
+             required
+             type="number" 
+             name="tel"
+             id="tel"
+             class="modal-input" 
+             />
+          </label>
+          <label class="label-form" for="mail"> 
+            <p class="text-modal">E-mail</p>
+            <svg class="modal-svg" width="15" height="12">
+              <use href="./images/icons.svg#icon-post"></use>
+            </svg>
+            <input 
+             required
+             type="email"
+             name="email" 
+             id="mail"
+             class="modal-input" 
+            />
+          </label>
+          <label class="label-form" for="number">
+            <p class="text-modal">Komentarz</p>
+             <textarea 
+             required
+             type="checkbox"
+             name="com" 
+             id="com"
+             class="modal-textarea" 
+             placeholder="Wprowadź tekst"
+            ></textarea>
+          </label>
+        </form>
         <button type="button" class="close-btn" data-modal-close>X</button>
       </div>
     </div>
