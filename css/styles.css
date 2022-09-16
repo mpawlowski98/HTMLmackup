@@ -571,7 +571,58 @@ footer {
 .svg-john {
   fill: var(--white);
 }
+.footer-form input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: var(--lowgray);
+  margin-left: 78px;
+}
 
+.btn-footer {
+  width: 200px;
+  height: 50px;
+  background: var(--lowblue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  position: relative;
+  margin-left: 12px;
+  padding-right: 30px;
+}
+.text-footer-form {
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 20px;
+  margin-left: 78px;
+}
+.footer-placeholder::placeholder {
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  width: 47px;
+  height: 20px;
+}
+.svg-footer-form {
+  position: relative;
+  fill: var(--white);
+  right: 60px;
+  top: 8px;
+}
 /* JS BACKDROP */
 .backdrop {
   position: fixed;
@@ -619,6 +670,9 @@ footer {
   line-height: 1.17;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
+}
+.label-form:focus-within {
+  fill: var(--lowblue);
 }
 .header-form {
   font-weight: 700;
@@ -689,12 +743,8 @@ footer {
 .form-check a {
   color: var(--lowblue);
 }
-.input-modal-check {
-  display: inline-flex;
-  width: 16px;
-  height: 15px;
-  border: solid black 2px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal-textarea {
+  outline: none;
 }
 .modal-textarea::placeholder {
   font-weight: 400;
@@ -733,4 +783,30 @@ input:focus {
   line-height: 1.87;
   letter-spacing: 0.06em;
   margin-top: 30px;
+}
+.input-modal-check {
+  display: inline-flex;
+  width: 16px;
+  height: 15px;
+  border: solid black 2px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hidden {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.check-svg {
+  position: relative;
+  right: 27px;
+  top: -2px;
+}
+.input-modal-check:checked {
+  background-color: var(--lowblue);
+  background-image: url(../images/icons.svg#icon-check2.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 2px;
 }
