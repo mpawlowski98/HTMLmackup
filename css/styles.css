@@ -803,7 +803,7 @@ input:focus {
 }
 .input-modal-check:checked {
   background-color: var(--lowblue);
-  background-image: url(../images/icons.svg#icon-check2.svg);
+  background-image: url(./images/icons.svg#icon-check2.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
