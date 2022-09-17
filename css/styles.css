@@ -796,7 +796,7 @@ input:focus {
   border: solid black 2px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-modal-check:checked::before {
+/* .input-modal-check:checked::before {
   background-color: var(--lowblue);
   background-image: url(../images/check.svg#icon-check3);
   background-size: contain;
@@ -804,8 +804,11 @@ input:focus {
   background-position: center;
   border-radius: 2px;
   fill: var(--white);
-}
+} */
 /* .input-modal-check:checked + .input-modal-check::before {
   background-image: url(../images/check4.svg#icon-Vector);
   border: none;
 } */
+.svg-form-modal {
+  fill: red;
+}
