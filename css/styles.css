@@ -790,7 +790,6 @@ input:focus {
 }
 .input-modal-check {
   display: inline-flex;
-  position: relative;
   width: 16px;
   height: 15px;
   border: solid black 1px;
@@ -798,7 +797,7 @@ input:focus {
 }
 .input-modal-check:checked {
   background-color: var(--lowblue);
-  background-image: url(../images/check3.svg);
+  background-image: url(./images/check3.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
