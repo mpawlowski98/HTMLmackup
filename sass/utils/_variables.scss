@@ -1,0 +1,16 @@
+$colors: (
+  "lowblue": #2196f3,
+  "black": #000000,
+  "hotblack": #212121,
+  "gray": #757575,
+  "white": #ffffff,
+  "lowgray": #2f303a,
+  "lightgray": #f5f4fa,
+  "nextgray": #afb1b8,
+  "pink": #8b008b,
+  "blue": #0000ff,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}

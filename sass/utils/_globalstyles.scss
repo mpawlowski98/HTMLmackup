@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: getColor("hotblack");
+  background: getColor("white");
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+button {
+  cursor: pointer;
+  &:active {
+    color: getColor("lowblue");
+  }
+  &:hover,
+  &:focus {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+.container {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
