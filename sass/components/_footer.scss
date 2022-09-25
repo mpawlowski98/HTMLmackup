@@ -1,0 +1,124 @@
+footer {
+  background: getColor("lowgray");
+}
+.footer__container {
+  display: inline-flex;
+  justify-content: center;
+  padding-left: 360px;
+}
+.footer__logo {
+  padding-right: 70px;
+  &-link--blue {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: getColor("lowblue");
+    letter-spacing: 0.03em;
+  }
+  &-link {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: getColor("white");
+  }
+  &-adress {
+    font-size: 14px;
+    line-height: 1.71;
+    color: getColor("white");
+    margin-block-end: 1em;
+    margin-block-start: 1em;
+    letter-spacing: 0.03em;
+  }
+  &-contact {
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    margin-block-start: 1em;
+    display: block;
+    letter-spacing: 0.03em;
+    &:hover &:focus {
+      color: getColor("lowblue");
+    }
+  }
+}
+.footer__social {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: getColor("white");
+  & p {
+    margin-bottom: 20px;
+  }
+  &-list {
+    display: flex;
+  }
+  &-svg {
+    padding: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  &-icon {
+    fill: getColor("white");
+  }
+}
+.footer__social-svg:hover,
+.footer__social-svg:focus {
+  cursor: pointer;
+  background-color: getColor("lowblue");
+}
+.footer__label-sign-up input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: getColor("lowgray");
+  margin-left: 78px;
+}
+.footer__sign-up {
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: getColor("white");
+  margin-bottom: 20px;
+  margin-left: 78px;
+}
+.footer__input::placeholder {
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  width: 47px;
+  height: 20px;
+}
+.footer_btn-sign-up {
+  width: 200px;
+  height: 50px;
+  background: getColor("lowblue");
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: getColor("white");
+  position: relative;
+  margin-left: 12px;
+  padding-right: 30px;
+}
+.footer__svg-sign-up {
+  position: relative;
+  fill: getColor("white");
+  right: 60px;
+  top: 8px;
+}

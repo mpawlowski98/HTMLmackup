@@ -1,0 +1,217 @@
+.main__header {
+  text-align: center;
+  background: getColor("lowgray");
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(
+      0deg,
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 58, 0.4) 100%
+    ),
+    url("../images/team.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  &-title {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color: getColor("white");
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  &-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    cursor: pointer;
+    color: getColor("white");
+    padding: 10px 42px 10px 41px;
+    background: getColor("lowblue");
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    margin-block-start: 1em;
+  }
+}
+.work__description {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  & ul {
+    display: flex;
+  }
+  & h5 {
+    color: getColor("gray");
+    text-align: left;
+    font-size: 14px;
+  }
+  & p {
+    text-align: left;
+  }
+  &-item {
+    background-color: rgba(245, 244, 250, 1);
+    display: inline-block;
+    padding: 25px 100px 25px 100px;
+    margin-bottom: 30px;
+  }
+  &-text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: getColor("gray");
+    text-align: left;
+    letter-spacing: 0.03em;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  &-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--hotblack);
+    margin-block-end: 1em;
+  }
+  &-box {
+    position: relative;
+  }
+  &-img {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+  &-box &-name {
+    position: absolute;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: getColor("white");
+    bottom: 0;
+    padding: 27px;
+  }
+}
+.work__description-icon {
+  width: 70px;
+  height: 70px;
+  &:hover svg &:after svg {
+    fill: #2196f3;
+  }
+}
+.section__team {
+  background: getColor("lightgray");
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: getColor("hotblack");
+    margin-block-end: 1em;
+  }
+  &-item {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0;
+  }
+  &-list {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding: 0px;
+    background: getColor("white");
+  }
+  &-name {
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+  &-position {
+    color: getColor("gray");
+    text-align: center;
+    margin-block-end: 1em;
+  }
+  &-box {
+    display: flex;
+    padding-left: 32px;
+    padding-right: 32px;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 1em;
+  }
+  &-svg {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-icon {
+    fill: getColor("nextgray");
+  }
+}
+.section__team-svg:hover svg,
+.section__team-svg:focus svg {
+  fill: getColor("white");
+}
+.section__team-svg:hover,
+.section__team-svg:hover {
+  background-color: #2196f3;
+  border-radius: 50%;
+  cursor: pointer;
+  color: getColor("white");
+}
+.clients__header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: getColor("hotblack");
+  margin-block-end: 1em;
+}
+.clients__svg {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  left: 215px;
+  top: 2493px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+}
+.clients__svg:hover svg,
+.clients__svg:hover svg {
+  fill: getColor("lowblue");
+}
+.clients__svg:hover,
+.clients__svg:after {
+  cursor: pointer;
+  border: 1px solid #2196f3;
+}
+.clients__svg-icon {
+  width: 106px;
+  height: 60px;
+  fill: getColor("nextgray");
+}
