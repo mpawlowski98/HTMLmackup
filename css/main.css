@@ -33,7 +33,7 @@ button:hover, button:focus {
           box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.container {
+.container, .header__page {
   width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,12 +44,12 @@ button:hover, button:focus {
           justify-content: center;
 }
 
-.section {
+.section, .main__header {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.container {
+.container, .header__page {
   width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,7 +60,7 @@ button:hover, button:focus {
           justify-content: center;
 }
 
-.section {
+.section, .main__header {
   padding-top: 94px;
   padding-bottom: 94px;
 }

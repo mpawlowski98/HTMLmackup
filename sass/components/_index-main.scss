@@ -1,4 +1,5 @@
 .main__header {
+  @extend .section;
   text-align: center;
   background: getColor("lowgray");
   height: 600px;
