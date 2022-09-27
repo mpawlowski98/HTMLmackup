@@ -33,7 +33,7 @@ button:hover, button:focus {
           box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.container, .header__container {
+.container, .portfolio, .clients__box, .article__container, .header__container {
   width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,12 +44,12 @@ button:hover, button:focus {
           justify-content: center;
 }
 
-.section, .main {
+.section, .footer, .clients, .main {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.container, .header__container {
+.container, .portfolio, .clients__box, .article__container, .header__container {
   width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,7 +60,7 @@ button:hover, button:focus {
           justify-content: center;
 }
 
-.section, .main {
+.section, .footer, .clients, .main {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -210,7 +210,7 @@ button:hover, button:focus {
   background-repeat: no-repeat;
 }
 
-.main__title {
+.main__container {
   text-align: center;
   margin: 0 auto;
   font-weight: 900;
@@ -237,32 +237,32 @@ button:hover, button:focus {
           margin-block-start: 1em;
 }
 
-.work__description {
+.article {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.work__description ul {
+.article ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.work__description h5 {
+.article h5 {
   color: #757575;
   text-align: left;
   font-size: 14px;
 }
-.work__description p {
+.article p {
   text-align: left;
 }
 
-.work__item {
+.article__item {
   background-color: rgb(245, 244, 250);
   display: inline-block;
   padding: 25px 100px 25px 100px;
   margin-bottom: 30px;
 }
 
-.work__text {
+.article__text {
   font-size: 14px;
   line-height: 1.71;
   color: #757575;
@@ -279,7 +279,7 @@ button:hover, button:focus {
           margin-inline-end: 0px;
 }
 
-.work__title {
+.article__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -290,11 +290,11 @@ button:hover, button:focus {
           margin-block-end: 1em;
 }
 
-.work__box, .work__name {
+.article__box, .article__name {
   position: relative;
 }
 
-.work__img {
+.article__img {
   position: absolute;
   width: 370px;
   height: 70px;
@@ -308,7 +308,7 @@ button:hover, button:focus {
           justify-content: center;
 }
 
-.work__name {
+.article__name {
   position: absolute;
   font-weight: 700;
   font-size: 14px;
@@ -321,21 +321,21 @@ button:hover, button:focus {
   padding: 27px;
 }
 
-.work__icon {
+.article__icon {
   width: 70px;
   height: 70px;
 }
-.work__icon:hover svg .work__icon:after svg {
+.article__icon:hover svg .article__icon:after svg {
   fill: #2196f3;
 }
 
-.section__container {
+.team {
   background: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.section__title {
+.team__container {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -347,7 +347,7 @@ button:hover, button:focus {
           margin-block-end: 1em;
 }
 
-.section__item {
+.team__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,7 +359,7 @@ button:hover, button:focus {
   padding: 0;
 }
 
-.section__list {
+.team__list {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -367,7 +367,7 @@ button:hover, button:focus {
   background: #ffffff;
 }
 
-.section__name {
+.team__name {
   font-weight: 500;
   text-align: center;
   font-size: 1.17em;
@@ -377,14 +377,14 @@ button:hover, button:focus {
           margin-block-end: 1em;
 }
 
-.section__position {
+.team__position {
   color: #757575;
   text-align: center;
   -webkit-margin-after: 1em;
           margin-block-end: 1em;
 }
 
-.section__box {
+.team__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,7 +397,7 @@ button:hover, button:focus {
   margin-bottom: 1em;
 }
 
-.section__svg {
+.team__svg {
   width: 44px;
   height: 44px;
   display: -webkit-box;
@@ -411,24 +411,24 @@ button:hover, button:focus {
           justify-content: center;
 }
 
-.section__icon {
+.team__icon {
   fill: #afb1b8;
 }
 
-.section__svg:hover svg,
-.section__svg:focus svg {
+.team__svg:hover svg,
+.team__svg:focus svg {
   fill: #ffffff;
 }
 
-.section__svg:hover,
-.section__svg:hover {
+.team__svg:hover,
+.team__svg:hover {
   background-color: #2196f3;
   border-radius: 50%;
   cursor: pointer;
   color: #ffffff;
 }
 
-.clients__title {
+.clients__container {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -474,7 +474,7 @@ button:hover, button:focus {
   fill: #afb1b8;
 }
 
-footer {
+.footer {
   background: #2f303a;
 }
 
@@ -672,7 +672,7 @@ footer {
   top: 8px;
 }
 
-.portfolio__list--blue {
+.portfolio__list {
   padding-right: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -693,7 +693,7 @@ footer {
   color: #212121;
 }
 
-.portfolio__nav {
+.portfolio__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -707,13 +707,13 @@ footer {
   color: #ffffff;
 }
 
-.container__portfolio ul {
+.offer ul {
   margin: 0 auto;
   width: 1200px;
   padding-bottom: 94px;
 }
 
-.portfolio__list {
+.offer__container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -726,7 +726,7 @@ footer {
   padding: 0;
 }
 
-.portfolio__item {
+.offer__item {
   border: 1px solid #eeeeee;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -734,24 +734,24 @@ footer {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__item:after,
-.portfolio__item:hover {
+.offer__item:after,
+.offer__item:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
 
-.portfolio__animation {
+.offer__animation {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio__item:hover .portfolio__info {
+.offer__item:hover .offer__info {
   -webkit-transform: translatey(0);
           transform: translatey(0);
 }
 
-.portfolio__info {
+.offer__info {
   position: absolute;
   top: 0;
   left: 0;
@@ -772,7 +772,7 @@ footer {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__header {
+.offer__header {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -782,7 +782,7 @@ footer {
   -webkit-margin-before: 1em;
           margin-block-start: 1em;
 }
-.portfolio__description {
+.offer__description {
   font-size: 16px;
   line-height: 1.87;
   color: #757575;

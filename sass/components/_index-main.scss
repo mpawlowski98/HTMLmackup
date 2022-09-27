@@ -16,7 +16,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.main__title {
+.main__container {
   text-align: center;
   margin: 0 auto;
   font-weight: 900;
@@ -39,7 +39,7 @@
   border-radius: 4px;
   margin-block-start: 1em;
 }
-.work__description {
+.article {
   padding-top: 94px;
   padding-bottom: 94px;
   & ul {
@@ -54,13 +54,16 @@
     text-align: left;
   }
 }
-.work__item {
+.article__container {
+  @extend .container;
+}
+.article__item {
   background-color: rgba(245, 244, 250, 1);
   display: inline-block;
   padding: 25px 100px 25px 100px;
   margin-bottom: 30px;
 }
-.work__text {
+.article__text {
   font-size: 14px;
   line-height: 1.71;
   color: getColor("gray");
@@ -72,7 +75,7 @@
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-.work__title {
+.article__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -81,10 +84,10 @@
   color: var(--hotblack);
   margin-block-end: 1em;
 }
-.work__box {
+.article__box {
   position: relative;
 }
-.work__img {
+.article__img {
   position: absolute;
   width: 370px;
   height: 70px;
@@ -93,8 +96,8 @@
   display: flex;
   justify-content: center;
 }
-.work__name {
-  @extend .work__box;
+.article__name {
+  @extend .article__box;
   position: absolute;
   font-weight: 700;
   font-size: 14px;
@@ -106,19 +109,19 @@
   bottom: 0;
   padding: 27px;
 }
-.work__icon {
+.article__icon {
   width: 70px;
   height: 70px;
   &:hover svg &:after svg {
     fill: #2196f3;
   }
 }
-.section__container {
+.team {
   background: getColor("lightgray");
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section__title {
+.team__container {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -128,33 +131,33 @@
   color: getColor("hotblack");
   margin-block-end: 1em;
 }
-.section__item {
+.team__item {
   display: flex;
   justify-content: center;
   margin: 0 auto;
   width: 1200px;
   padding: 0;
 }
-.section__list {
+.team__list {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding: 0px;
   background: getColor("white");
 }
-.section__name {
+.team__name {
   font-weight: 500;
   text-align: center;
   font-size: 1.17em;
   margin-block-start: 1em;
   margin-block-end: 1em;
 }
-.section__position {
+.team__position {
   color: getColor("gray");
   text-align: center;
   margin-block-end: 1em;
 }
-.section__box {
+.team__box {
   display: flex;
   padding-left: 32px;
   padding-right: 32px;
@@ -162,28 +165,34 @@
   margin-top: 16px;
   margin-bottom: 1em;
 }
-.section__svg {
+.team__svg {
   width: 44px;
   height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.section__icon {
+.team__icon {
   fill: getColor("nextgray");
 }
-.section__svg:hover svg,
-.section__svg:focus svg {
+.team__svg:hover svg,
+.team__svg:focus svg {
   fill: getColor("white");
 }
-.section__svg:hover,
-.section__svg:hover {
+.team__svg:hover,
+.team__svg:hover {
   background-color: #2196f3;
   border-radius: 50%;
   cursor: pointer;
   color: getColor("white");
 }
-.clients__title {
+.clients {
+  @extend .section;
+}
+.clients__box {
+  @extend .container;
+}
+.clients__container {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;

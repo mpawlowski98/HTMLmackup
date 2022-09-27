@@ -1,5 +1,6 @@
-footer {
+.footer {
   background: getColor("lowgray");
+  @extend .section;
 }
 .footer__container {
   display: inline-flex;
