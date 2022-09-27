@@ -33,7 +33,7 @@ button:hover, button:focus {
           box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.container, .header__page {
+.container, .header__container {
   width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,7 +49,7 @@ button:hover, button:focus {
   padding-bottom: 94px;
 }
 
-.container, .header__page {
+.container, .header__container {
   width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,7 +75,7 @@ button:hover, button:focus {
   border: 1px solid #ececec;
 }
 
-.header__page {
+.header__container {
   padding: 24px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -84,7 +84,8 @@ button:hover, button:focus {
       -ms-flex-align: center;
           align-items: center;
 }
-.header__page-link--blue {
+
+.header__title--blue {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -93,7 +94,8 @@ button:hover, button:focus {
   color: #2196f3;
   letter-spacing: 0.03em;
 }
-.header__page-link {
+
+.header__title {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
