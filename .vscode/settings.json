@@ -3,12 +3,12 @@
     {
       "format": "expanded",
       "extensionName": ".css",
-      "savePath": "./../goit-markup-hw-07/css"
+      "savePath": "./../goit-markup-hw-08/css"
     },
     {
       "extensionName": ".min.css",
       "format": "compressed",
-      "savePath": "./../goit-markup-hw-07/css"
+      "savePath": "./../goit-markup-hw-08/css"
     }
   ],
   "liveSassCompile.settings.excludeList": ["**/node_modules/**"],
