@@ -49,6 +49,15 @@ button:hover, button:focus {
   padding-bottom: 94px;
 }
 
+@media screen and (min-width: 1200px) {
+  .container, .portfolio, .clients__box, .article__container, .header__container {
+    max-width: 1200px;
+  }
+  .section, .footer, .clients, .main {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .container, .portfolio, .clients__box, .article__container, .header__container {
   width: 1200px;
   display: -webkit-box;
@@ -85,6 +94,25 @@ button:hover, button:focus {
           align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .header__link {
+    display: none;
+  }
+  .header__link--item {
+    display: none;
+  }
+}
+.header__mobile-button {
+  background-color: transparent;
+  border: none;
+  color: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header__mobile-button {
+    display: none;
+  }
+}
 .header__title {
   font-family: "Raleway";
   font-style: normal;
@@ -187,6 +215,39 @@ button:hover, button:focus {
   display: block;
 }
 
+.js-close-menu {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 25px;
+  top: 21px;
+  font-size: 24px;
+}
+.js-close-menu:hover {
+  color: #2196f3;
+}
+
+.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.js-menu-container {
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  z-index: 5;
+  padding-left: 60px;
+}
+
 .main {
   text-align: center;
   background: #2f303a;
@@ -204,12 +265,42 @@ button:hover, button:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/team.jpg");
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/team.jpg");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header-img-mobile.jpg");
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/header-img-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header-img-mobilex2.jpg");
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/header-img-mobilex2.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .main {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header-img-tablet.jpg");
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/header-img-tablet.jpg");
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header-img-tabletx2.jpg");
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/header-img-tabletx2.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header-img-desktop.jpg");
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/header-img-desktop.jpg");
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header-img-desktopx2.jpg");
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/header-img-desktopx2.jpg");
+  }
+}
 .main__container {
   text-align: center;
   margin: 0 auto;
@@ -1011,4 +1102,15 @@ button:hover, button:focus {
 
 input:focus {
   border: 1px solid #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }/*# sourceMappingURL=main.css.map */
