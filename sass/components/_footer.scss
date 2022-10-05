@@ -1,125 +1,209 @@
 .footer {
-  background: getColor("lowgray");
-  @extend .section;
+  background-color: getColor("lowgray");
+}
+.div-footer__btn-sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer__container {
-  display: inline-flex;
-  justify-content: center;
-  padding-left: 360px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @extend .container;
 }
-.footer__logo {
-  padding-right: 70px;
-}
-.footer__link--blue {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: getColor("lowblue");
-  letter-spacing: 0.03em;
-}
-.footer__link {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: getColor("white");
-}
-.footer__adress {
-  font-size: 14px;
-  line-height: 1.71;
-  color: getColor("white");
-  margin-block-end: 1em;
-  margin-block-start: 1em;
-  letter-spacing: 0.03em;
-}
-.footer__contact {
-  font-size: 14px;
-  line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
-  margin-block-start: 1em;
-  display: block;
-  letter-spacing: 0.03em;
-  &:hover &:focus {
-    color: getColor("lowblue");
+.footer {
+  &__logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.19;
+    margin-bottom: 20px;
+    text-align: center;
   }
-}
-.footer__social {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: getColor("white");
-  & p {
+  &__adress {
+    line-height: 1.5;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: getColor("white");
+    margin-top: 0px;
+    margin-bottom: 9px;
+  }
+  &__link {
+    color: getColor("white");
+    text-decoration: none;
+
+    &--blue {
+      color: getColor("lowblue");
+    }
+  }
+  &__contact-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+  }
+  &__contact-item {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    margin-bottom: 60px;
+    text-align: center;
+
+    &--margin-bottom {
+      margin-bottom: 9px;
+    }
+  }
+  &__contact-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: getColor("lowblue");
+    }
+  }
+  &__socials {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: getColor("white");
+    margin-bottom: 60px;
+    &-join-us {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+  &__social-icon-div {
+    display: flex;
+    list-style: none;
+    padding-left: 15px;
+  }
+  &__icon {
+    fill: getColor("white");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__socials-div {
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: getColor("lowblue");
+      cursor: pointer;
+    }
+  }
+  &__icon-link {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus .footer__socials-div {
+      background-color: getColor("lowblue");
+    }
+  }
+
+  &__label-sign-up {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: getColor("white");
     margin-bottom: 20px;
   }
+  &__btn-sign-up {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: getColor("white");
+    line-height: 1.88;
+  }
+  &__svg-btn {
+    margin-left: 24px;
+    position: relative;
+    top: 5px;
+    fill: getColor("white");
+  }
+  &__btn-sign-up {
+    width: 200px;
+    height: 50px;
+    background-color: getColor("lowblue");
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
+  }
+  &-email-input {
+    background-color: #2f303a;
+    width: 100%;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
+  &-email-input {
+    padding: 16px;
+  }
 }
-.footer__list {
-  display: flex;
+.footer__mobile {
+  width: 100%;
 }
-.footer__svg {
-  padding: 12px;
-  border-radius: 50%;
-  margin-right: 10px;
-  background: rgba(255, 255, 255, 0.1);
+@media screen and (min-width: 768px) {
+  .footer__tablet {
+    display: flex;
+    gap: 144px;
+  }
+  .footer__sign-up {
+    max-width: 450px;
+    margin: 0 auto;
+  }
 }
-.footer__icon {
-  fill: getColor("white");
-}
-.footer__svg:hover,
-.footer__svg:focus {
-  cursor: pointer;
-  background-color: getColor("lowblue");
-}
-.footer__label input {
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background: getColor("lowgray");
-  margin-left: 78px;
-}
-.footer__sign-up {
-  display: flex;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: getColor("white");
-  margin-bottom: 20px;
-  margin-left: 78px;
-}
-.footer__input::placeholder {
-  padding-left: 16px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  width: 47px;
-  height: 20px;
-}
-.footer_button {
-  width: 200px;
-  height: 50px;
-  background: getColor("lowblue");
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-style: none;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  color: getColor("white");
-  position: relative;
-  margin-left: 12px;
-  padding-right: 30px;
-}
-.footer__svg--sign-up {
-  position: relative;
-  fill: getColor("white");
-  right: 60px;
-  top: 8px;
+@media screen and (min-width: 1200px) {
+  .footer__mobile {
+    width: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+  }
+  .footer__tablet {
+    display: flex;
+    gap: 0px;
+  }
+  .footer__container {
+    flex-direction: row;
+  }
+  .footer {
+    &__logo {
+      text-align: start;
+    }
+    &__desktop {
+      width: 246px;
+    }
+    &__contact-list {
+      padding-right: 120px;
+    }
+    &__social-icon-div {
+      margin-left: 70px;
+    }
+    &-email-input {
+      width: 350px;
+    }
+    &__sign-up {
+      display: flex;
+      max-width: none;
+    }
+    &__btn-sign-up {
+      margin-top: 0px;
+      margin-left: 12px;
+    }
+  }
 }

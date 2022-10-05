@@ -150,9 +150,9 @@
     flex-basis: calc((100% - 3 * 30px) / 4);
   }
 }
-// .article__container {
-//   @extend .container;
-// }
+.article__container {
+  @extend .container;
+}
 .article-hidden__container {
   @extend .container;
   display: flex;
