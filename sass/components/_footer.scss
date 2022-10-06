@@ -141,6 +141,14 @@
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     margin-top: 20px;
+    cursor: pointer;
+    &:active {
+      color: getColor("lowblue");
+    }
+    &:hover,
+    &:focus {
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
   }
   &-email-input {
     background-color: #2f303a;

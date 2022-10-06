@@ -21,18 +21,7 @@ img {
   display: block;
 }
 
-button {
-  cursor: pointer;
-}
-button:active {
-  color: #2196f3;
-}
-button:hover, button:focus {
-  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.container, .portfolio-nav, .footer__container, .article-hidden__container, .article__container, .header__container {
+.container, .portfolio-nav, .footer__container, .team__list, .team__item, .article-hidden__container, .article__container, .header__container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -46,7 +35,7 @@ button:hover, button:focus {
 }
 
 @media screen and (min-width: 1200px) {
-  .container, .portfolio-nav, .footer__container, .article-hidden__container, .article__container, .header__container {
+  .container, .portfolio-nav, .footer__container, .team__list, .team__item, .article-hidden__container, .article__container, .header__container {
     max-width: 1200px;
   }
   .section, .portfolio-nav__container, .main {
@@ -399,6 +388,13 @@ header {
   -webkit-margin-before: 1em;
           margin-block-start: 1em;
 }
+.main__button:active {
+  color: #2196f3;
+}
+.main__button:hover, .main__button:focus {
+  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
 .article {
   padding-top: 94px;
@@ -466,6 +462,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 30px;
 }
 
 .article__item {
@@ -556,7 +553,6 @@ header {
 .team__photo {
   max-width: 100%;
   margin: 0 auto;
-  display: block;
 }
 
 .team__container {
@@ -583,7 +579,6 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
-  margin-right: 30px;
 }
 
 .team__list {
@@ -615,13 +610,15 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 100px;
-  padding-right: 100px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 16px;
   margin-bottom: 1em;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .team__svg {
@@ -936,6 +933,14 @@ header {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin-top: 20px;
+  cursor: pointer;
+}
+.footer__btn-sign-up:active {
+  color: #2196f3;
+}
+.footer__btn-sign-up:hover, .footer__btn-sign-up:focus {
+  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .footer-email-input {
   background-color: #2f303a;
