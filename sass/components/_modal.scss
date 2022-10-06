@@ -13,7 +13,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 520px;
+  width: 450px;
   min-height: 581px;
   background-color: getColor("white");
   &__button--close {
@@ -35,8 +35,6 @@
 }
 .modal__label {
   position: relative;
-  display: block;
-  margin-bottom: 4px;
   color: var(--lightgray);
   letter-spacing: 0.01em;
   font-size: 12px;
@@ -50,8 +48,8 @@
 .modal_ {
   &_input {
     display: block;
-    width: 448px;
-    height: 40px;
+    width: 370px;
+    height: 30px;
     margin-bottom: 10px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -63,12 +61,12 @@
   }
   &_svg {
     position: absolute;
-    top: 32px;
+    top: 27px;
     left: 50px;
   }
   &_textarea {
     display: block;
-    width: 448px;
+    width: 370px;
     height: 120px;
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -99,7 +97,7 @@
   }
   &_check label {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: getColor("gray");
@@ -107,7 +105,7 @@
   &_check input {
     margin-right: 9px;
     cursor: pointer;
-    margin-left: 57px;
+    margin-left: 40px;
     margin-top: 20px;
   }
   &_check a {
@@ -140,14 +138,12 @@
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 40px;
   color: getColor("hotblack");
-  width: 448px;
-  height: 23px;
 }
 .modal__button button {
-  margin-left: 164px;
+  margin-left: 120px;
   width: 200px;
   height: 50px;
   background: getColor("lowblue");
@@ -156,23 +152,53 @@
   color: getColor("white");
   font-size: 16px;
   line-height: 1.87;
+  cursor: pointer;
   letter-spacing: 0.06em;
-  margin-top: 30px;
+  margin-top: 40px;
   &:hover &:focus {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  &:active {
+    color: getColor("lowblue");
+  }
+  &:hover,
+  &:focus {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
 input:focus {
   border: 1px solid getColor("lowblue");
 }
-@media screen and (min-width: 480px) {
-  .modal {
-    width: 450px;
-  }
-}
+
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    width: 520px;
+    &__input {
+      width: 448px;
+      height: 40px;
+    }
+    &__svg {
+      top: 32px;
+    }
+    &__textarea {
+      width: 448px;
+    }
+    &__check label {
+      font-size: 14px;
+    }
+    &__check input {
+      margin-left: 57px;
+    }
+  }
+  .modal__container {
+    width: 448px;
+    height: 23px;
+    padding-top: 40px;
+    margin-left: 40px;
+  }
+  .modal__button button {
+    margin-left: 164px;
+    margin-top: 30px;
   }
 }
