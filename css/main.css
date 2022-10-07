@@ -304,13 +304,18 @@ header {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #2196f3;
+  padding-bottom: 32px;
 }
 .mobile-menu__item--socials {
-  padding-top: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 15px;
 }
 .mobile-menu__list--contact {
   font-weight: 500;
@@ -318,6 +323,7 @@ header {
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #757575;
+  padding-bottom: 64px;
 }
 .mobile-menu__list--socials {
   font-weight: 500;
@@ -1297,11 +1303,6 @@ header {
   margin-right: 8px;
   cursor: pointer;
 }
-.modal__checkbox--hidden {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-}
 .modal__checkbox:checked {
   background-color: #2196f3;
   background-image: url(../images/check.svg);
@@ -1322,6 +1323,7 @@ header {
   color: #ffffff;
   width: 200px;
   height: 50px;
+  cursor: pointer;
 }
 .modal__btn-div {
   display: -webkit-box;
@@ -1334,6 +1336,13 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 30px;
+}
+.modal__btn:active {
+  color: #2196f3;
+}
+.modal__btn:hover, .modal__btn:focus {
+  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .modal__icon {
   position: absolute;

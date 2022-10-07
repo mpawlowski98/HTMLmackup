@@ -204,11 +204,13 @@ header {
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: getColor("lowblue");
+    padding-bottom: 32px;
   }
   &__item--socials {
-    padding-top: 64px;
     display: flex;
-    padding-left: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 15px;
   }
   &__list--contact {
     font-weight: 500;
@@ -216,6 +218,7 @@ header {
     line-height: 28px;
     letter-spacing: 0.02em;
     color: getColor("gray");
+    padding-bottom: 64px;
   }
   &__list--socials {
     font-weight: 500;
